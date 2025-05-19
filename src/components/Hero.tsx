@@ -1,13 +1,11 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-
 const Hero = () => {
-  return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95">
+  return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95 py-[150px] my-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
@@ -41,46 +39,7 @@ grâce aux agents sales</h1>
             </div>
             
             {/* Trust signals with real logos */}
-            <div className="pt-8">
-              <p className="text-sm font-medium text-foreground/60 uppercase tracking-wider mb-4">Ils nous font confiance</p>
-              <div className="flex flex-wrap items-center gap-8">
-                {/* La Poste Logo */}
-                <div className="h-12 w-24 bg-white flex items-center justify-center rounded-md p-1">
-                  <img 
-                    src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_La_Poste_2005.svg/1200px-Logo_La_Poste_2005.svg.png" 
-                    alt="La Poste" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                
-                {/* Magic Form Logo */}
-                <div className="h-12 w-24 bg-black flex items-center justify-center rounded-md p-1">
-                  <img 
-                    src="https://magicform-pe.fr/wp-content/uploads/2022/04/MFE_LOGO_FOND_NOIR.png" 
-                    alt="Magic Form" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                
-                {/* Renault Logo */}
-                <div className="h-12 w-24 bg-white flex items-center justify-center rounded-md p-1">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/Renault-Logo.png" 
-                    alt="Renault" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-                
-                {/* BNP Paribas Logo */}
-                <div className="h-12 w-24 bg-white flex items-center justify-center rounded-md p-1">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2020/11/BNP-Paribas-Logo.png" 
-                    alt="BNP Paribas" 
-                    className="h-8 w-auto object-contain"
-                  />
-                </div>
-              </div>
-            </div>
+            
             
             {/* Stats cards */}
             <div className="pt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -132,13 +91,10 @@ grâce aux agents sales</h1>
           animationDelay: '0.3s'
         }}>
             <div className="relative rounded-2xl overflow-hidden aspect-video shadow-lg border border-border/40 bg-card/30">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
+              
               
               {/* Video thumbnail - Robot on dark background without play button */}
-              <div className="relative w-full h-full">
-                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80" alt="Robot passant un appel téléphonique" className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-              </div>
+              
               
               {/* Floating badge */}
               <div className="absolute top-4 right-4 backdrop-blur-sm rounded-full py-1 px-3 shadow-md border border-border/40 bg-zinc-50">
@@ -169,5 +125,4 @@ grâce aux agents sales</h1>
       <Separator className="mt-24 opacity-30" />
     </section>;
 };
-
 export default Hero;
