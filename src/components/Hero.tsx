@@ -45,40 +45,32 @@ grâce aux agents sales</h1>
               <p className="text-sm font-medium text-foreground/60 uppercase tracking-wider mb-4">Ils nous font confiance</p>
               <div className="flex flex-wrap items-center gap-8">
                 {/* La Poste Logo */}
-                <div className="h-12 flex items-center">
-                  <img 
-                    src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_La_Poste_2005.svg/800px-Logo_La_Poste_2005.svg.png" 
-                    alt="La Poste" 
-                    className="h-8 object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_La_Poste_2005.svg/640px-Logo_La_Poste_2005.svg.png" 
+                  alt="La Poste" 
+                  className="h-8 object-contain"
+                />
                 
                 {/* Magic Form Logo */}
-                <div className="h-12 flex items-center">
-                  <img 
-                    src="https://magicform-pe.fr/wp-content/uploads/2022/04/MFE_LOGO_FOND_NOIR.png" 
-                    alt="Magic Form" 
-                    className="h-10 object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://magicform-pe.fr/wp-content/uploads/2022/04/MFE_LOGO_FOND_NOIR.png" 
+                  alt="Magic Form" 
+                  className="h-10 object-contain"
+                />
                 
                 {/* Renault Logo */}
-                <div className="h-12 flex items-center">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2021/03/Renault-Logo.png" 
-                    alt="Renault" 
-                    className="h-8 object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://logos-world.net/wp-content/uploads/2021/03/Renault-Logo.png" 
+                  alt="Renault" 
+                  className="h-8 object-contain"
+                />
                 
                 {/* BNP Paribas Logo */}
-                <div className="h-12 flex items-center">
-                  <img 
-                    src="https://logos-world.net/wp-content/uploads/2020/11/BNP-Paribas-Logo.png" 
-                    alt="BNP Paribas" 
-                    className="h-8 object-contain"
-                  />
-                </div>
+                <img 
+                  src="https://logos-world.net/wp-content/uploads/2020/11/BNP-Paribas-Logo.png" 
+                  alt="BNP Paribas" 
+                  className="h-8 object-contain"
+                />
               </div>
             </div>
             
