@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
@@ -16,7 +17,7 @@ const Hero = () => {
             </Badge>
             
             {/* H1 Title */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-foreground to-foreground/80 text-zinc-950">Boostez vos performances 
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-foreground to-foreground/80 text-zinc-950">Boostez vos performances 
 grâce aux agents sales</h1>
             
             <p className="text-xl text-foreground/80 max-w-xl">
@@ -101,9 +102,9 @@ grâce aux agents sales</h1>
             <div className="relative rounded-2xl overflow-hidden aspect-video shadow-lg border border-border/40 bg-card/30">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
               
-              {/* Video thumbnail with play button */}
+              {/* Video thumbnail with play button - Updated with robot image */}
               <div className="relative w-full h-full">
-                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Équipe commerciale en action" className="w-full h-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Robots passant des appels téléphoniques" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-white shadow-lg hover:bg-primary transition-colors">
