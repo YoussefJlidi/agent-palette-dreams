@@ -1,13 +1,18 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
+
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
-            <h1 className="heading-xl">
-              Transformez vos <span className="text-primary"></span> en machines à résultats
+            <h1 className="heading-xl relative">
+              Transformez vos <span className="relative inline-block">
+                <span className="text-primary font-bold relative z-10">équipes commerciales</span>
+                <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 rounded-full -z-0 transform -rotate-1"></span>
+              </span> en machines à résultats
             </h1>
             <p className="text-xl text-foreground/80 max-w-xl">
               Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
