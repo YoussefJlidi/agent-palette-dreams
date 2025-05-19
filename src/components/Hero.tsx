@@ -1,9 +1,11 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,14 +40,45 @@ grâce aux agents sales</h1>
               </Button>
             </div>
             
-            {/* Trust signals */}
+            {/* Trust signals with real logos */}
             <div className="pt-8">
               <p className="text-sm font-medium text-foreground/60 uppercase tracking-wider mb-4">Ils nous font confiance</p>
-              <div className="flex flex-wrap items-center gap-8 opacity-70">
-                <div className="h-8 w-24 bg-muted/30 rounded-md flex items-center justify-center text-xs font-bold">LOGO 1</div>
-                <div className="h-8 w-24 bg-muted/30 rounded-md flex items-center justify-center text-xs font-bold">LOGO 2</div>
-                <div className="h-8 w-24 bg-muted/30 rounded-md flex items-center justify-center text-xs font-bold">LOGO 3</div>
-                <div className="h-8 w-24 bg-muted/30 rounded-md flex items-center justify-center text-xs font-bold">LOGO 4</div>
+              <div className="flex flex-wrap items-center gap-8">
+                {/* La Poste Logo */}
+                <div className="h-12 flex items-center">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_La_Poste_2005.svg/800px-Logo_La_Poste_2005.svg.png" 
+                    alt="La Poste" 
+                    className="h-8 object-contain"
+                  />
+                </div>
+                
+                {/* Magic Form Logo */}
+                <div className="h-12 flex items-center">
+                  <img 
+                    src="https://magicform-pe.fr/wp-content/uploads/2022/04/MFE_LOGO_FOND_NOIR.png" 
+                    alt="Magic Form" 
+                    className="h-10 object-contain"
+                  />
+                </div>
+                
+                {/* Renault Logo */}
+                <div className="h-12 flex items-center">
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2021/03/Renault-Logo.png" 
+                    alt="Renault" 
+                    className="h-8 object-contain"
+                  />
+                </div>
+                
+                {/* BNP Paribas Logo */}
+                <div className="h-12 flex items-center">
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2020/11/BNP-Paribas-Logo.png" 
+                    alt="BNP Paribas" 
+                    className="h-8 object-contain"
+                  />
+                </div>
               </div>
             </div>
             
@@ -136,4 +169,5 @@ grâce aux agents sales</h1>
       <Separator className="mt-24 opacity-30" />
     </section>;
 };
+
 export default Hero;
