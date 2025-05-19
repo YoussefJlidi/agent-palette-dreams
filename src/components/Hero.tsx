@@ -150,10 +150,10 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Floating card 1 */}
-            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border/50 bg-card/90 backdrop-blur-sm">
+            {/* Floating card 1 - Improved readability */}
+            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border/50 bg-card/95 backdrop-blur-sm">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-primary/90">+42%</div>
+                <div className="w-14 h-14 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-primary">+42%</div>
                 <div>
                   <p className="text-sm text-foreground/70">Augmentation moyenne</p>
                   <p className="font-semibold">du taux de conversion</p>
@@ -162,7 +162,7 @@ const Hero = () => {
             </div>
             
             {/* Floating card 2 */}
-            <div className="absolute -top-6 -right-6 rounded-lg shadow-lg p-4 border border-border/50 bg-card/90 backdrop-blur-sm hidden md:block">
+            <div className="absolute -top-6 -right-6 rounded-lg shadow-lg p-4 border border-border/50 bg-card/95 backdrop-blur-sm hidden md:block">
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-2">
                   <div className="w-8 h-8 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-medium text-xs shadow-sm">

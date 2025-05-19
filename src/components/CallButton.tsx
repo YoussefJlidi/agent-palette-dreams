@@ -5,13 +5,18 @@ import { Phone } from 'lucide-react';
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 
-const CallButton = () => {
+interface CallButtonProps {
+  darkMode?: boolean;
+  slideText?: string;
+}
+
+const CallButton = ({ darkMode = false, slideText = "Glisser pour appeler" }: CallButtonProps) => {
   const [isDragging, setIsDragging] = useState(false);
   const [dragPosition, setDragPosition] = useState(0);
   const { toast } = useToast();
   
   // Définir la largeur de la zone de glissement
-  const maxDragWidth = 200;
+  const maxDragWidth = 280;
   
   const handleDragStart = (e: React.MouseEvent | React.TouchEvent) => {
     setIsDragging(true);
@@ -65,29 +70,44 @@ const CallButton = () => {
     }, 2000);
   };
 
+  const progressPercentage = (dragPosition / maxDragWidth) * 100;
+
   return (
     <div className="relative max-w-md mx-auto">
       {/* Fond du slider */}
       <div 
-        className="bg-card/80 backdrop-blur-sm border border-border/50 rounded-full h-14 relative overflow-hidden shadow-lg"
+        className={cn(
+          "relative h-14 rounded-full overflow-hidden shadow-lg",
+          darkMode ? "bg-[#333333]" : "bg-card/80 backdrop-blur-sm border border-border/50"
+        )}
         style={{ width: `${maxDragWidth}px` }}
       >
         {/* Texte du slider */}
-        <div className="absolute inset-0 flex items-center justify-center text-sm font-medium text-foreground/70 pl-14">
-          Glisser pour appeler
+        <div className="absolute inset-0 flex items-center justify-center text-sm font-medium pl-14 uppercase tracking-wider">
+          <div className={cn(
+            "flex items-center gap-2",
+            darkMode ? "text-gray-300" : "text-foreground/70"
+          )}>
+            <span className="inline-block transform translate-x-1">→</span>
+            {slideText}
+          </div>
         </div>
         
         {/* Barre de progression */}
         <div 
-          className="absolute top-0 left-0 bottom-0 bg-primary/20 transition-all"
-          style={{ width: `${dragPosition}px` }}
+          className={cn(
+            "absolute top-0 left-0 bottom-0 transition-all",
+            darkMode ? "bg-primary/20" : "bg-primary/20"
+          )}
+          style={{ width: `${progressPercentage}%` }}
         ></div>
         
         {/* Bouton glissable */}
         <div 
           className={cn(
-            "absolute top-1 left-1 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center cursor-grab transition-transform",
-            isDragging && "cursor-grabbing scale-105"
+            "absolute top-1 left-1 w-12 h-12 rounded-full flex items-center justify-center cursor-grab transition-transform",
+            isDragging && "cursor-grabbing scale-105",
+            darkMode ? "bg-primary text-white" : "bg-primary text-primary-foreground"
           )}
           style={{ 
             transform: `translateX(${dragPosition}px)`,
