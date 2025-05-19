@@ -1,11 +1,9 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,63 +108,27 @@ grâce aux agents sales</h1>
               </div>
               
               {/* Floating badge */}
-              <div className="absolute top-4 right-4 bg-card/90 backdrop-blur-sm rounded-full py-1 px-3 shadow-md border border-border/40">
-                <span className="text-xs font-medium">Top équipe commerciale 2023</span>
+              <div className="absolute top-4 right-4 backdrop-blur-sm rounded-full py-1 px-3 shadow-md border border-border/40 bg-zinc-50">
+                <span className="text-xs font-medium">🟢 Commandez dès maintenant votre agent</span>
               </div>
               
               {/* Features list at the bottom */}
-              <div className="absolute bottom-0 left-0 right-0 bg-card/80 backdrop-blur-md p-4 border-t border-border/30">
-                <ul className="grid grid-cols-2 gap-3">
-                  <li className="flex items-center gap-2">
-                    <Check size={16} className="text-primary" />
-                    <span className="text-sm font-medium">Formation sur mesure</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check size={16} className="text-primary" />
-                    <span className="text-sm font-medium">Coaching personnalisé</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check size={16} className="text-primary" />
-                    <span className="text-sm font-medium">Analyse en temps réel</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <Check size={16} className="text-primary" />
-                    <span className="text-sm font-medium">Stratégie sur mesure</span>
-                  </li>
-                </ul>
-              </div>
+              
             </div>
             
             {/* Floating card 1 - Improved readability */}
-            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border/50 bg-card/95 backdrop-blur-sm">
+            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border/50 backdrop-blur-sm bg-zinc-950">
               <div className="flex items-center gap-3">
                 <div className="w-14 h-14 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-primary">+42%</div>
                 <div>
-                  <p className="text-sm text-foreground/70">Augmentation moyenne</p>
-                  <p className="font-semibold">du taux de conversion</p>
+                  <p className="text-sm text-zinc-50">Augmentation moyenne</p>
+                  <p className="font-semibold text-zinc-50">du taux de conversion</p>
                 </div>
               </div>
             </div>
             
             {/* Floating card 2 */}
-            <div className="absolute -top-6 -right-6 rounded-lg shadow-lg p-4 border border-border/50 bg-card/95 backdrop-blur-sm hidden md:block">
-              <div className="flex items-center gap-3">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-medium text-xs shadow-sm">
-                    SG
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-medium text-xs shadow-sm">
-                    TM
-                  </div>
-                  <div className="w-8 h-8 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-medium text-xs shadow-sm">
-                    BP
-                  </div>
-                </div>
-                <p className="text-sm">
-                  <span className="font-semibold">+32</span> nouveaux agents
-                </p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -174,5 +136,4 @@ grâce aux agents sales</h1>
       <Separator className="mt-24 opacity-30" />
     </section>;
 };
-
 export default Hero;
