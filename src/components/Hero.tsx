@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
@@ -17,9 +16,8 @@ const Hero = () => {
             </Badge>
             
             {/* H1 Title */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/80">
-              Boostez vos performaces grâce aux agents sales
-            </h1>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-foreground to-foreground/80 text-zinc-950">Boostez vos performances 
+grâce aux agents sales</h1>
             
             <p className="text-xl text-foreground/80 max-w-xl">
               Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
