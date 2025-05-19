@@ -1,128 +1,70 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { ArrowRight } from 'lucide-react';
+
 const Hero = () => {
-  return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95 py-[150px] my-0">
+  return <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
-            {/* Badge de mise en avant */}
-            <Badge variant="outline" className="px-4 py-1.5 text-sm bg-card/50 backdrop-blur border-border/50 shadow-sm">
-              <span className="inline-block mr-2 w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="font-medium">Déployez des agents commerciaux en 3 clics</span>
-            </Badge>
-            
-            {/* H1 Title */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight bg-clip-text bg-gradient-to-r from-foreground to-foreground/80 text-zinc-950">Boostez vos performances 
-grâce aux agents sales</h1>
-            
+            <h1 className="heading-xl relative">
+              Transformez vos <span className="relative inline-block">
+                <span className="text-primary font-bold relative z-10">équipes commerciales</span>
+                <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 rounded-full -z-0 transform -rotate-1"></span>
+              </span> en machines à résultats
+            </h1>
             <p className="text-xl text-foreground/80 max-w-xl">
               Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
             </p>
-            
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="group relative overflow-hidden bg-primary text-primary-foreground" size="lg">
-                <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/20 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
-                <span className="relative flex items-center">
-                  Découvrir nos services
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </span>
+              <Button className="btn-primary" size="lg">
+                Découvrir nos services
+                <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
-              
-              <Button variant="outline" size="lg" className="group border-border/50 hover:bg-accent/50">
-                <Play size={18} className="mr-2 text-primary" />
-                <span className="relative">Voir la démo</span>
+              <Button variant="outline" size="lg">
+                Prendre rendez-vous
               </Button>
             </div>
             
-            {/* Trust signals with real logos */}
-            
-            
-            {/* Stats cards */}
-            <div className="pt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <Card className="bg-card/50 backdrop-blur border-border/40 shadow-sm">
-                <CardContent className="p-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-md bg-primary/10">
-                      <Users className="text-primary h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-foreground/70">Clients satisfaits</p>
-                      <p className="font-bold text-lg">500+</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card/50 backdrop-blur border-border/40 shadow-sm">
-                <CardContent className="p-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-md bg-chart-2/20">
-                      <Award className="text-chart-2 h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-foreground/70">Années d'expertise</p>
-                      <p className="font-bold text-lg">15+</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-              
-              <Card className="bg-card/50 backdrop-blur border-border/40 shadow-sm">
-                <CardContent className="p-4">
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-md bg-chart-3/20">
-                      <BarChart3 className="text-chart-3 h-5 w-5" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-foreground/70">Conversion moyenne</p>
-                      <p className="font-bold text-lg">+42%</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="pt-8 flex items-center space-x-4">
+              <div className="flex -space-x-3">
+                <div className="w-12 h-12 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
+                  <span className="text-gray-950">SG</span>
+                </div>
+                <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
+                  <span>TM</span>
+                </div>
+                <div className="w-12 h-12 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
+                  <span>BP</span>
+                </div>
+              </div>
+              <p className="text-sm text-foreground/80">
+                <span className="font-semibold">+500</span> entreprises nous font confiance
+              </p>
             </div>
           </div>
           
           <div className="md:w-1/2 relative animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <div className="relative rounded-2xl overflow-hidden aspect-video shadow-lg border border-border/40 bg-card/30">
-              
-              
-              {/* Video thumbnail - Robot on dark background without play button */}
-              
-              
-              {/* Floating badge */}
-              <div className="absolute top-4 right-4 backdrop-blur-sm rounded-full py-1 px-3 shadow-md border border-border/40 bg-zinc-50">
-                <span className="text-xs font-medium">🟢 Commandez dès maintenant votre agent</span>
-              </div>
-              
-              {/* Features list at the bottom */}
-              
+            <div className="relative rounded-2xl overflow-hidden aspect-video shadow-xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5"></div>
+              <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Équipe commerciale en action" className="w-full h-full object-cover" />
             </div>
             
-            {/* Floating card 1 - Improved readability */}
-            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border/50 backdrop-blur-sm bg-zinc-950">
+            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-stone-50">
               <div className="flex items-center gap-3">
-                <div className="w-14 h-14 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-primary">+42%</div>
+                <div className="w-12 h-12 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-gray-950">+42%</div>
                 <div>
-                  <p className="text-sm text-zinc-50">Augmentation moyenne</p>
-                  <p className="font-semibold text-zinc-50">du taux de conversion</p>
+                  <p className="text-sm text-foreground/70">Augmentation moyenne</p>
+                  <p className="font-semibold">du taux de conversion</p>
                 </div>
               </div>
             </div>
-            
-            {/* Floating card 2 */}
-            
           </div>
         </div>
       </div>
-      
-      <Separator className="mt-24 opacity-30" />
     </section>;
 };
 export default Hero;
