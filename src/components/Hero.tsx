@@ -26,10 +26,16 @@ const Hero = () => {
             </div>
             
             <div className="pt-8 flex items-center space-x-4">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 rounded-full bg-chart-1 border-2 border-background"></div>
-                <div className="w-10 h-10 rounded-full bg-chart-2 border-2 border-background"></div>
-                <div className="w-10 h-10 rounded-full bg-chart-3 border-2 border-background"></div>
+              <div className="flex -space-x-3">
+                <div className="w-12 h-12 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
+                  <span>SG</span>
+                </div>
+                <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
+                  <span>TM</span>
+                </div>
+                <div className="w-12 h-12 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
+                  <span>BP</span>
+                </div>
               </div>
               <p className="text-sm text-foreground/80">
                 <span className="font-semibold">+500</span> entreprises nous font confiance
@@ -49,7 +55,7 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -left-6 bg-background rounded-lg shadow-lg p-4 border border-border">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 bg-chart-4 rounded-full flex items-center justify-center text-white font-bold">
+                <div className="w-12 h-12 bg-chart-4 rounded-full flex items-center justify-center text-white font-bold shadow-md">
                   +42%
                 </div>
                 <div>
