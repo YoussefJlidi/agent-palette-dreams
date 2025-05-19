@@ -5,6 +5,7 @@ import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
+
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,15 +103,10 @@ grâce aux agents sales</h1>
             <div className="relative rounded-2xl overflow-hidden aspect-video shadow-lg border border-border/40 bg-card/30">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
               
-              {/* Video thumbnail with play button - Updated with robot on dark background */}
+              {/* Video thumbnail - Robot on dark background without play button */}
               <div className="relative w-full h-full">
                 <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80" alt="Robot passant un appel téléphonique" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-white shadow-lg hover:bg-primary transition-colors">
-                    <Play size={32} fill="currentColor" />
-                  </button>
-                </div>
               </div>
               
               {/* Floating badge */}
@@ -178,4 +174,5 @@ grâce aux agents sales</h1>
       <Separator className="mt-24 opacity-30" />
     </section>;
 };
+
 export default Hero;
