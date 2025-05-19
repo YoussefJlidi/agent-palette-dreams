@@ -1,38 +1,20 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from 'lucide-react';
-
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  return (
-    <header className="fixed w-full bg-background/90 backdrop-blur-lg z-50 border-b border-border/40 shadow-sm">
+  return <header className="fixed w-full bg-background/90 backdrop-blur-lg z-50 border-b border-border/40 shadow-sm">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <a href="#" className="text-xl font-bold flex items-center gap-2">
-              <div className="w-8 h-8 bg-primary rounded-md flex items-center justify-center shadow-inner relative overflow-hidden group">
-                <span className="text-primary-foreground font-bold text-sm relative z-10">SP</span>
-                <div className="absolute inset-0 bg-gradient-to-tr from-primary-foreground/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              </div>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">iapulsion.com</span>
+              
+              <span className="bg-clip-text bg-gradient-to-r from-foreground to-foreground/70 text-gray-950">iapulsion.com</span>
             </a>
           </div>
           
@@ -111,8 +93,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;

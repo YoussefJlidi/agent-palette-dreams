@@ -1,29 +1,21 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, BarChart3, Users, Play, Check } from 'lucide-react';
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-
 const Hero = () => {
-  return (
-    <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95">
+  return <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-background to-background/95">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
             {/* Badge de mise en avant */}
             <Badge variant="outline" className="px-4 py-1.5 text-sm bg-card/50 backdrop-blur border-border/50 shadow-sm">
               <span className="inline-block mr-2 w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              <span className="font-medium">Numéro 1 des solutions commerciales en France</span>
+              <span className="font-medium">Déployez des agents commerciaux en 3 clics</span>
             </Badge>
             
-            <h1 className="heading-xl relative">
-              Transformez vos <span className="relative inline-block">
-                <span className="text-primary font-bold relative z-10">équipes commerciales</span>
-                <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 rounded-full -z-0 transform -rotate-1"></span>
-              </span> en machines à résultats
-            </h1>
+            
             
             <p className="text-xl text-foreground/80 max-w-xl">
               Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
@@ -102,18 +94,14 @@ const Hero = () => {
           </div>
           
           <div className="md:w-1/2 relative animate-fade-in" style={{
-            animationDelay: '0.3s'
-          }}>
+          animationDelay: '0.3s'
+        }}>
             <div className="relative rounded-2xl overflow-hidden aspect-video shadow-lg border border-border/40 bg-card/30">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent"></div>
               
               {/* Video thumbnail with play button */}
               <div className="relative w-full h-full">
-                <img 
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
-                  alt="Équipe commerciale en action" 
-                  className="w-full h-full object-cover"
-                />
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Équipe commerciale en action" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button className="w-16 h-16 rounded-full bg-primary/90 flex items-center justify-center text-white shadow-lg hover:bg-primary transition-colors">
@@ -185,8 +173,6 @@ const Hero = () => {
       </div>
       
       <Separator className="mt-24 opacity-30" />
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
