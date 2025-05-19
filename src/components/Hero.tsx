@@ -45,32 +45,40 @@ grâce aux agents sales</h1>
               <p className="text-sm font-medium text-foreground/60 uppercase tracking-wider mb-4">Ils nous font confiance</p>
               <div className="flex flex-wrap items-center gap-8">
                 {/* La Poste Logo */}
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_La_Poste_2005.svg/640px-Logo_La_Poste_2005.svg.png" 
-                  alt="La Poste" 
-                  className="h-8 object-contain"
-                />
+                <div className="h-12 w-24 bg-white flex items-center justify-center rounded-md p-1">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/fr/thumb/0/0d/Logo_La_Poste_2005.svg/1200px-Logo_La_Poste_2005.svg.png" 
+                    alt="La Poste" 
+                    className="h-8 w-auto object-contain"
+                  />
+                </div>
                 
                 {/* Magic Form Logo */}
-                <img 
-                  src="https://magicform-pe.fr/wp-content/uploads/2022/04/MFE_LOGO_FOND_NOIR.png" 
-                  alt="Magic Form" 
-                  className="h-10 object-contain"
-                />
+                <div className="h-12 w-24 bg-black flex items-center justify-center rounded-md p-1">
+                  <img 
+                    src="https://magicform-pe.fr/wp-content/uploads/2022/04/MFE_LOGO_FOND_NOIR.png" 
+                    alt="Magic Form" 
+                    className="h-8 w-auto object-contain"
+                  />
+                </div>
                 
                 {/* Renault Logo */}
-                <img 
-                  src="https://logos-world.net/wp-content/uploads/2021/03/Renault-Logo.png" 
-                  alt="Renault" 
-                  className="h-8 object-contain"
-                />
+                <div className="h-12 w-24 bg-white flex items-center justify-center rounded-md p-1">
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2021/03/Renault-Logo.png" 
+                    alt="Renault" 
+                    className="h-8 w-auto object-contain"
+                  />
+                </div>
                 
                 {/* BNP Paribas Logo */}
-                <img 
-                  src="https://logos-world.net/wp-content/uploads/2020/11/BNP-Paribas-Logo.png" 
-                  alt="BNP Paribas" 
-                  className="h-8 object-contain"
-                />
+                <div className="h-12 w-24 bg-white flex items-center justify-center rounded-md p-1">
+                  <img 
+                    src="https://logos-world.net/wp-content/uploads/2020/11/BNP-Paribas-Logo.png" 
+                    alt="BNP Paribas" 
+                    className="h-8 w-auto object-contain"
+                  />
+                </div>
               </div>
             </div>
             
