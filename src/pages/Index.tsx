@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
+import CallNow from '@/components/CallNow';
 import AgentTypes from '@/components/AgentTypes';
 import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
@@ -12,6 +13,7 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       <Hero />
+      <CallNow />
       
       <section id="services" className="section-padding">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
