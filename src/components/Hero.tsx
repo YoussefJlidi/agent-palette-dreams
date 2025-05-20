@@ -1,8 +1,6 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
-
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -33,7 +31,7 @@ const Hero = () => {
                   <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
-                  <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
+                  <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/59852843-aacf-4f6f-83d0-2b7c4363f870.jpg" />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
                   <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
@@ -55,7 +53,7 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-stone-50">
               <div className="flex items-center gap-3">
-                <div className="w-16 h-16 flex items-center justify-center font-bold shadow-md rounded-lg bg-black text-white">
+                <div className="w-16 h-16 flex items-center justify-center font-bold shadow-md rounded-lg bg-black text-white px-[54px]">
                   <span className="text-2xl">+142%</span>
                 </div>
                 <div>
