@@ -11,9 +11,9 @@ const agentTypes = [
     borderColor: "border-chart-1/30"
   },
   {
-    title: "Agent Commercial Export",
-    description: "Expert en commerce international, il développe votre présence sur les marchés étrangers et gère les spécificités culturelles.",
-    icon: "🌍",
+    title: "Agent Commercial B2C",
+    description: "Expert en vente aux particuliers, il développe votre présence sur le marché grand public et gère les spécificités de la clientèle individuelle.",
+    icon: "🛍️",
     color: "bg-chart-2/10",
     borderColor: "border-chart-2/30"
   },
@@ -25,25 +25,32 @@ const agentTypes = [
     borderColor: "border-chart-3/30"
   },
   {
-    title: "Agent Commercial Digital",
-    description: "Maîtrise les canaux de vente en ligne et le social selling pour convertir des prospects dans l'environnement numérique.",
-    icon: "💻",
+    title: "Agent Réceptionniste",
+    description: "Accueille et oriente les prospects, gère les premiers contacts et qualifie les demandes pour optimiser le parcours client.",
+    icon: "👋",
     color: "bg-chart-4/10",
     borderColor: "border-chart-4/30"
   },
   {
-    title: "Agent Commercial Technique",
+    title: "Agent Ingénieur Commercial",
     description: "Possède une expertise technique approfondie pour vendre des solutions complexes nécessitant des connaissances spécifiques.",
     icon: "⚙️",
     color: "bg-chart-5/10",
     borderColor: "border-chart-5/30"
   },
   {
-    title: "Agent Commercial Indépendant",
-    description: "Entrepreneur autonome qui représente plusieurs marques et gère son activité comme une micro-entreprise.",
-    icon: "🚀",
+    title: "Agent Account Manager",
+    description: "Gère et développe les comptes clients existants, optimise leur satisfaction et maximise leur valeur à long terme.",
+    icon: "🤝",
     color: "bg-primary/10",
     borderColor: "border-primary/30"
+  },
+  {
+    title: "Agent Customer Success",
+    description: "Assure la réussite des clients avec vos produits et services, anticipe leurs besoins et garantit leur fidélisation.",
+    icon: "🌟",
+    color: "bg-chart-1/10",
+    borderColor: "border-chart-1/30"
   }
 ];
 
