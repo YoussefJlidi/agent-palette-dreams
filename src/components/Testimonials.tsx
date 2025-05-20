@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Sophie Martin",
     position: "Directrice Commerciale, Tech Solutions",
-    content: "Grâce à SalesAgentPro, nous avons recruté trois agents commerciaux parfaitement adaptés à notre secteur. Notre chiffre d'affaires a augmenté de 27% en seulement six mois.",
+    content: "Grâce à iapulsion.com, nous avons recruté trois agents commerciaux parfaitement adaptés à notre secteur. Notre chiffre d'affaires a augmenté de 27% en seulement six mois.",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg"
   },
   {

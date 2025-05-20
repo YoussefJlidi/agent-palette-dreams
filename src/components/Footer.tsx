@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
-            <h3 className="text-xl font-bold mb-4">SalesAgentPro</h3>
+            <h3 className="text-xl font-bold mb-4">iapulsion.com</h3>
             <p className="text-foreground/70 mb-4">
               Solutions innovantes pour optimiser vos équipes commerciales.
             </p>
@@ -109,7 +108,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-foreground/60 text-sm">
-              © 2025 SalesAgentPro. Tous droits réservés.
+              © 2025 iapulsion.com. Tous droits réservés.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-foreground/60 hover:text-primary text-sm">
