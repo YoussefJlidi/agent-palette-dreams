@@ -16,10 +16,7 @@ const Hero = () => {
               </span> en machines à résultats
             </h1>
             <p className="text-xl text-foreground/80 max-w-xl">Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
-
-
-
-          </p>
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button className="btn-primary" size="lg">
                 Découvrir nos services
@@ -28,11 +25,6 @@ const Hero = () => {
               <Button variant="outline" size="lg">
                 Prendre rendez-vous
               </Button>
-            </div>
-            
-            <div className="pt-6 w-full">
-              <p className="text-sm font-semibold text-foreground/80 mb-2">Ils nous font confiance</p>
-              <LogoSlider />
             </div>
           </div>
           
@@ -56,6 +48,10 @@ const Hero = () => {
               </div>
             </div>
           </div>
+        </div>
+        
+        <div className="mt-16">
+          <LogoSlider />
         </div>
       </div>
     </section>;

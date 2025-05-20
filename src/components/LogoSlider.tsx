@@ -1,72 +1,64 @@
 
 import * as React from "react";
-import { 
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext
-} from "@/components/ui/carousel";
 
 type Logo = {
   name: string;
   src: string;
+  width?: number;
 };
 
 const logos: Logo[] = [
   { 
-    name: "Company 1", 
-    src: "https://images.unsplash.com/photo-1488972685288-c3fd157d7c7a?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" 
+    name: "La Poste", 
+    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1f/Logo_La_Poste.svg/1200px-Logo_La_Poste.svg.png", 
+    width: 140
   },
   { 
-    name: "Company 2", 
-    src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" 
+    name: "Société Générale", 
+    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/9/9d/Logo_Société_Générale.svg/1200px-Logo_Société_Générale.svg.png", 
+    width: 150
   },
   { 
-    name: "Company 3", 
-    src: "https://images.unsplash.com/photo-1518005020951-eccb494ad742?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" 
+    name: "Orange", 
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/1200px-Orange_logo.svg.png", 
+    width: 120
   },
   { 
-    name: "Company 4", 
-    src: "https://images.unsplash.com/photo-1496307653780-42ee777d4833?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" 
+    name: "Carrefour", 
+    src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carrefour_logo.svg/1200px-Carrefour_logo.svg.png", 
+    width: 160
   },
   { 
-    name: "Company 5", 
-    src: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&h=50&q=80" 
-  }
+    name: "La Poste", 
+    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1f/Logo_La_Poste.svg/1200px-Logo_La_Poste.svg.png", 
+    width: 140
+  },
+  { 
+    name: "SNCF", 
+    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c9/Logo_SNCF_2011.svg/1200px-Logo_SNCF_2011.svg.png", 
+    width: 140
+  },
 ];
 
 const LogoSlider = () => {
   return (
-    <div className="w-full mt-6">
-      <Carousel
-        opts={{
-          align: "start",
-          loop: true,
-        }}
-        className="w-full"
-      >
-        <CarouselContent className="-ml-2 md:-ml-4">
-          {logos.map((logo, index) => (
-            <CarouselItem 
-              key={index} 
-              className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5"
-            >
-              <div className="p-2 h-20 flex items-center justify-center rounded-md">
-                <img
-                  src={logo.src}
-                  alt={logo.name}
-                  className="max-h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                />
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <div className="hidden md:flex">
-          <CarouselPrevious className="-left-4" />
-          <CarouselNext className="-right-4" />
-        </div>
-      </Carousel>
+    <div className="w-full py-8">
+      <div className="text-center mb-8">
+        <h2 className="text-2xl font-bold uppercase tracking-wider">Ils nous font confiance</h2>
+      </div>
+      
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-items-center">
+        {logos.map((logo, index) => (
+          <div key={index} className="flex justify-center items-center p-4">
+            <img
+              src={logo.src}
+              alt={logo.name}
+              style={{ width: logo.width ? `${logo.width}px` : 'auto', maxWidth: '100%' }}
+              className="object-contain max-h-16 grayscale hover:grayscale-0 transition-all duration-300"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
