@@ -63,21 +63,21 @@ const Pricing = () => {
             <Card 
               key={index}
               className={`animate-fade-in border-2 ${
-                tier.popular ? "border-primary" : "border-border"
-              } ${tier.custom ? "bg-primary text-primary-foreground" : ""}`}
+                tier.popular ? "border-black" : "border-border"
+              } ${tier.custom ? "bg-black text-white" : ""}`}
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {tier.popular && (
-                <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-medium">
+                <div className="absolute top-0 right-0 -mt-2 -mr-2 bg-black text-white px-3 py-1 rounded-full text-xs font-medium">
                   Populaire
                 </div>
               )}
               
               <CardHeader>
-                <CardTitle className={`text-2xl font-bold ${tier.custom ? "text-primary-foreground" : ""}`}>
+                <CardTitle className={`text-2xl font-bold ${tier.custom ? "text-white" : ""}`}>
                   {tier.name}
                 </CardTitle>
-                <CardDescription className={tier.custom ? "text-primary-foreground/90" : ""}>
+                <CardDescription className={tier.custom ? "text-white/90" : ""}>
                   {tier.description}
                 </CardDescription>
               </CardHeader>
@@ -85,10 +85,10 @@ const Pricing = () => {
               <CardContent>
                 {tier.price && (
                   <div className="mb-6">
-                    <span className={`text-3xl font-bold ${tier.custom ? "text-primary-foreground" : ""}`}>
+                    <span className={`text-3xl font-bold ${tier.custom ? "text-white" : ""}`}>
                       {tier.price}
                     </span>
-                    <span className={`text-sm ${tier.custom ? "text-primary-foreground/70" : "text-foreground/70"}`}>
+                    <span className={`text-sm ${tier.custom ? "text-white/70" : "text-foreground/70"}`}>
                       /mois
                     </span>
                   </div>
@@ -97,10 +97,10 @@ const Pricing = () => {
                 <ul className="space-y-3">
                   {tier.features.map((feature, i) => (
                     <li key={i} className="flex items-start">
-                      <span className={`mr-2 mt-1 ${tier.custom ? "text-primary-foreground" : "text-primary"}`}>
+                      <span className={`mr-2 mt-1 ${tier.custom ? "text-white" : "text-primary"}`}>
                         <Check className="h-4 w-4" />
                       </span>
-                      <span className={tier.custom ? "text-primary-foreground/90" : ""}>
+                      <span className={tier.custom ? "text-white/90" : ""}>
                         {feature}
                       </span>
                     </li>
@@ -111,11 +111,13 @@ const Pricing = () => {
               <CardFooter>
                 <Button 
                   className={`w-full ${
-                    tier.custom 
-                      ? "bg-primary-foreground hover:bg-primary-foreground/90 text-primary" 
-                      : ""
+                    tier.popular 
+                      ? "bg-black hover:bg-black/90 text-white border-black" 
+                      : tier.custom 
+                        ? "bg-white hover:bg-white/90 text-black border-white" 
+                        : ""
                   }`}
-                  variant={tier.custom ? "outline" : "default"}
+                  variant={tier.popular || tier.custom ? "outline" : "default"}
                 >
                   {tier.custom ? "Discuter avec notre agent" : "Commencer"}
                 </Button>
