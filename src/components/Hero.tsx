@@ -55,8 +55,8 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-stone-50">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex items-center justify-center font-bold shadow-md rounded-lg bg-gray-950 overflow-hidden">
-                  <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
+                <div className="w-12 h-12 flex items-center justify-center font-bold shadow-md rounded-lg bg-primary text-white">
+                  <span className="text-xl">+142%</span>
                 </div>
                 <div>
                   <p className="text-sm text-foreground/70">Augmentation moyenne</p>
