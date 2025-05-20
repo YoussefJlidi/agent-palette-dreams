@@ -1,11 +1,9 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
 import LogoSlider from './LogoSlider';
-
 const Hero = () => {
-  return <section className="pt-32 pb-16 md:pt-40 md:pb-24">
+  return <section className="pt-32 pb-16 md:pt-40 md:pb-24 py-[100px]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
@@ -56,5 +54,4 @@ const Hero = () => {
       </div>
     </section>;
 };
-
 export default Hero;

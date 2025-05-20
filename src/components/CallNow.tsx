@@ -1,34 +1,30 @@
-
 import React, { useState } from 'react';
 import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Phone } from "lucide-react";
 import { useToast } from "../hooks/use-toast";
-
 const CallNow = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
-  const { toast } = useToast();
-  
+  const {
+    toast
+  } = useToast();
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!phoneNumber.trim()) {
       toast({
         title: "Erreur",
         description: "Veuillez entrer votre numéro de téléphone",
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
-    
     toast({
       title: "Demande envoyée",
-      description: "Un agent vous contactera très bientôt",
+      description: "Un agent vous contactera très bientôt"
     });
     setPhoneNumber('');
   };
-  
-  return (
-    <section className="py-16 md:py-24 bg-background">
+  return <section className="py-16 bg-background md:py-[58px]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Parlez dès maintenant à nos agents
@@ -40,13 +36,7 @@ const CallNow = () => {
               <h3 className="text-xl font-medium mb-4">Ajouter votre numéro</h3>
               
               <form onSubmit={handleSubmit}>
-                <Input 
-                  type="tel" 
-                  placeholder="Votre numéro de téléphone" 
-                  className="mb-4"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                />
+                <Input type="tel" placeholder="Votre numéro de téléphone" className="mb-4" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)} />
                 
                 <Button type="submit" className="w-full bg-black hover:bg-black/90 text-white">
                   <Phone className="mr-2 h-5 w-5" />
@@ -82,8 +72,6 @@ const CallNow = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default CallNow;
