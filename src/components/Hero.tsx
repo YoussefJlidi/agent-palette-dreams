@@ -12,9 +12,11 @@ const Hero = () => {
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 rounded-full -z-0 transform -rotate-1"></span>
               </span> en machines à résultats
             </h1>
-            <p className="text-xl text-foreground/80 max-w-xl">
-              Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
-            </p>
+            <p className="text-xl text-foreground/80 max-w-xl">Des solutions innovantes pour recruter, former et optimiser les performances de vos agents commerciaux.
+
+
+
+          </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button className="btn-primary" size="lg">
                 Découvrir nos services
@@ -28,7 +30,7 @@ const Hero = () => {
             <div className="pt-8 flex items-center space-x-4">
               <div className="flex -space-x-3">
                 <div className="w-12 h-12 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
-                  <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
+                  <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/8d493b79-615f-48de-8927-36cd9a1106f6.png" />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
                   <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/59852843-aacf-4f6f-83d0-2b7c4363f870.jpg" />
@@ -51,7 +53,7 @@ const Hero = () => {
               <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Équipe commerciale en action" className="w-full h-full object-cover" />
             </div>
             
-            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-stone-50">
+            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-gray-300">
               <div className="flex items-center gap-3">
                 <div className="w-16 h-16 flex items-center justify-center font-bold shadow-md rounded-lg bg-black text-white px-[54px]">
                   <span className="text-2xl">+142%</span>
