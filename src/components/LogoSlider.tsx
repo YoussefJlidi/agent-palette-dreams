@@ -29,13 +29,13 @@ const logos: Logo[] = [
     width: 160
   },
   { 
-    name: "La Poste", 
-    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1f/Logo_La_Poste.svg/1200px-Logo_La_Poste.svg.png", 
+    name: "SNCF", 
+    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c9/Logo_SNCF_2011.svg/1200px-Logo_SNCF_2011.svg.png", 
     width: 140
   },
   { 
-    name: "SNCF", 
-    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c9/Logo_SNCF_2011.svg/1200px-Logo_SNCF_2011.svg.png", 
+    name: "La Poste", 
+    src: "https://upload.wikimedia.org/wikipedia/fr/thumb/1/1f/Logo_La_Poste.svg/1200px-Logo_La_Poste.svg.png", 
     width: 140
   },
 ];
@@ -47,14 +47,15 @@ const LogoSlider = () => {
         <h2 className="text-2xl font-bold uppercase tracking-wider">Ils nous font confiance</h2>
       </div>
       
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 items-center justify-items-center">
+      <div className="flex flex-wrap justify-center gap-8 items-center">
         {logos.map((logo, index) => (
           <div key={index} className="flex justify-center items-center p-4">
             <img
               src={logo.src}
               alt={logo.name}
-              style={{ width: logo.width ? `${logo.width}px` : 'auto', maxWidth: '100%' }}
-              className="object-contain max-h-16 grayscale hover:grayscale-0 transition-all duration-300"
+              width={logo.width || 120}
+              className="h-12 object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              loading="lazy"
             />
           </div>
         ))}
