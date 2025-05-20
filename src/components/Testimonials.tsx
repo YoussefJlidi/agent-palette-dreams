@@ -6,19 +6,19 @@ const testimonials = [
   {
     name: "Sophie Martin",
     position: "Directrice Commerciale, Tech Solutions",
-    content: "\"Grâce à iapulsion.com, nous avons recruté trois agents commerciaux parfaitement adaptés à notre secteur. Notre chiffre d'affaires a augmenté de 27% en seulement six mois.\"",
+    content: "Grâce à iapulsion.com, nous avons recruté trois agents commerciaux parfaitement adaptés à notre secteur. Notre chiffre d'affaires a augmenté de 27% en seulement six mois.\"",
     avatar: "https://randomuser.me/api/portraits/women/65.jpg"
   },
   {
     name: "Thomas Dubois",
     position: "CEO, Retail Expansion Group",
-    content: "\"La formation fournie à nos agents a complètement transformé notre approche commerciale. Nos équipes sont plus confiantes et les résultats parlent d'eux-mêmes.\"",
+    content: "La formation fournie à nos agents a complètement transformé notre approche commerciale. Nos équipes sont plus confiantes et les résultats parlent d'eux-mêmes.\"",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     name: "Léa Moreau",
     position: "Agent commercial indépendant",
-    content: "\"En tant qu'agent indépendant, les ressources et le coaching proposés m'ont permis de structurer mon activité et d'attirer des clients plus importants. Un investissement très rentable.\"",
+    content: "En tant qu'agent indépendant, les ressources et le coaching proposés m'ont permis de structurer mon activité et d'attirer des clients plus importants. Un investissement très rentable.\"",
     avatar: "https://randomuser.me/api/portraits/women/33.jpg"
   }
 ];
