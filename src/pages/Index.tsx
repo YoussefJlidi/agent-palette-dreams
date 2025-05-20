@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -5,7 +6,9 @@ import CallNow from '@/components/CallNow';
 import AgentTypes from '@/components/AgentTypes';
 import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
+import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
       <Header />
@@ -112,6 +115,7 @@ const Index = () => {
       <AgentTypes />
       <Testimonials />
       <CallToAction />
+      <FAQ />
       <Footer />
     </div>;
 };
