@@ -1,6 +1,9 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
+import LogoSlider from './LogoSlider';
+
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -27,21 +30,9 @@ const Hero = () => {
               </Button>
             </div>
             
-            <div className="pt-8 flex items-center space-x-4">
-              <div className="flex -space-x-3">
-                <div className="w-12 h-12 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
-                  <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/8d493b79-615f-48de-8927-36cd9a1106f6.png" />
-                </div>
-                <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
-                  <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/0f6e50db-1ab1-4f92-ab3d-a0071659a428.png" />
-                </div>
-                <div className="w-12 h-12 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
-                  <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
-                </div>
-              </div>
-              <p className="text-sm text-foreground/80">
-                <span className="font-semibold">+500</span> agents déployés durant les 6 derniers mois
-              </p>
+            <div className="pt-6 w-full">
+              <p className="text-sm font-semibold text-foreground/80 mb-2">Ils nous font confiance</p>
+              <LogoSlider />
             </div>
           </div>
           
@@ -69,4 +60,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
