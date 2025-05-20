@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
@@ -8,9 +7,9 @@ const Hero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="md:w-1/2 space-y-6 animate-fade-in">
-            <h1 className="heading-xl relative">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter relative">
               Transformez vos <span className="relative inline-block">
-                <span className="text-primary font-bold relative z-10">équipes commerciales</span>
+                <span className="text-primary font-extrabold relative z-10">équipes commerciales</span>
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-primary/10 rounded-full -z-0 transform -rotate-1"></span>
               </span> en machines à résultats
             </h1>
