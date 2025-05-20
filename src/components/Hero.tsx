@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
@@ -54,8 +55,8 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-stone-50">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex items-center justify-center font-bold shadow-md rounded-lg bg-primary text-white">
-                  <span className="text-xl">+142%</span>
+                <div className="w-16 h-16 flex items-center justify-center font-bold shadow-md rounded-lg bg-black text-white">
+                  <span className="text-2xl">+142%</span>
                 </div>
                 <div>
                   <p className="text-sm text-foreground/70">Augmentation moyenne</p>
