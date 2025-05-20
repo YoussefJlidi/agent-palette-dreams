@@ -53,7 +53,7 @@ const Hero = () => {
               <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Équipe commerciale en action" className="w-full h-full object-cover" />
             </div>
             
-            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-gray-300">
+            <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-white">
               <div className="flex items-center gap-3">
                 <div className="w-16 h-16 flex items-center justify-center font-bold shadow-md rounded-lg bg-black text-white px-[54px]">
                   <span className="text-2xl">+142%</span>
