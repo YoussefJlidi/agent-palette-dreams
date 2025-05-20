@@ -33,7 +33,7 @@ const Hero = () => {
                   <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/8d493b79-615f-48de-8927-36cd9a1106f6.png" />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
-                  <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/59852843-aacf-4f6f-83d0-2b7c4363f870.jpg" />
+                  <img alt="Robot assistant" className="w-10 h-10 object-cover" src="/lovable-uploads/0f6e50db-1ab1-4f92-ab3d-a0071659a428.png" />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-bold shadow-md overflow-hidden">
                   <img src="/lovable-uploads/8480fb29-c579-4771-9d4e-0f05777bdb2f.png" alt="Robot assistant" className="w-10 h-10 object-cover" />
