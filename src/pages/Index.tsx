@@ -6,6 +6,7 @@ import CallNow from '@/components/CallNow';
 import AgentTypes from '@/components/AgentTypes';
 import Testimonials from '@/components/Testimonials';
 import CallToAction from '@/components/CallToAction';
+import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 
@@ -113,6 +114,7 @@ const Index = () => {
       </section>
       
       <AgentTypes />
+      <Pricing />
       <Testimonials />
       <CallToAction />
       <FAQ />
