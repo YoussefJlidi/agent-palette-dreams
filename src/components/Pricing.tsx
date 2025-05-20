@@ -110,9 +110,7 @@ const Pricing = () => {
               
               <CardFooter>
                 <Button 
-                  className={`w-full bg-black hover:bg-black/90 text-white ${
-                    tier.custom ? "border-white" : ""
-                  }`}
+                  className="w-full bg-black hover:bg-black/90 text-white"
                   variant="outline"
                 >
                   {tier.custom ? "Discuter avec notre agent" : "Commencer"}

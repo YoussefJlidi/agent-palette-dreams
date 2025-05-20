@@ -9,6 +9,7 @@ import CallToAction from '@/components/CallToAction';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import SectorsCarousel from '@/components/SectorsCarousel';
 
 const Index = () => {
   return <div className="min-h-screen bg-background text-foreground">
@@ -113,6 +114,7 @@ const Index = () => {
         </div>
       </section>
       
+      <SectorsCarousel />
       <AgentTypes />
       <Pricing />
       <Testimonials />
