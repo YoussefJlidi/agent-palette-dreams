@@ -18,13 +18,6 @@ const agentTypes = [
     borderColor: "border-chart-2/30"
   },
   {
-    title: "Agent Commercial Retail",
-    description: "Centré sur la vente aux particuliers, il excelle dans la persuasion et la création d'expériences client mémorables.",
-    icon: "🛍️",
-    color: "bg-chart-3/10",
-    borderColor: "border-chart-3/30"
-  },
-  {
     title: "Agent Réceptionniste",
     description: "Accueille et oriente les prospects, gère les premiers contacts et qualifie les demandes pour optimiser le parcours client.",
     icon: "👋",
