@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Bot } from 'lucide-react';
 
 const Hero = () => {
   return <section className="pt-32 pb-16 md:pt-40 md:pb-24">
@@ -30,17 +30,17 @@ const Hero = () => {
             <div className="pt-8 flex items-center space-x-4">
               <div className="flex -space-x-3">
                 <div className="w-12 h-12 rounded-full bg-chart-1 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
-                  <span className="text-gray-950">SG</span>
+                  <Bot size={20} />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-2 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
-                  <span>TM</span>
+                  <Bot size={20} />
                 </div>
                 <div className="w-12 h-12 rounded-full bg-chart-3 border-2 border-background flex items-center justify-center text-white font-bold shadow-md">
-                  <span>BP</span>
+                  <Bot size={20} />
                 </div>
               </div>
               <p className="text-sm text-foreground/80">
-                <span className="font-semibold">+500</span> entreprises nous font confiance
+                <span className="font-semibold">+500</span> agents déployés durant les 6 derniers mois
               </p>
             </div>
           </div>
@@ -55,7 +55,9 @@ const Hero = () => {
             
             <div className="absolute -bottom-6 -left-6 rounded-lg shadow-lg p-4 border border-border bg-stone-50">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-gray-950">+42%</div>
+                <div className="w-12 h-12 flex items-center justify-center text-white font-bold shadow-md rounded-lg bg-gray-950">
+                  <Bot size={20} />
+                </div>
                 <div>
                   <p className="text-sm text-foreground/70">Augmentation moyenne</p>
                   <p className="font-semibold">du taux de conversion</p>
