@@ -1,45 +1,151 @@
-import React from 'react';
+
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Mail, User, Briefcase, Send } from 'lucide-react';
+import { useForm } from "react-hook-form";
+import { Form, FormField, FormItem, FormControl } from "@/components/ui/form";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+
+type FormData = {
+  name: string;
+  email: string;
+  company: string;
+  message: string;
+};
+
 const CallToAction = () => {
-  return <section id="contact" className="section-padding bg-primary text-primary-foreground">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="animate-fade-in">
-            <h2 className="heading-lg mb-6">Prêt à transformer votre force de vente?</h2>
-            <p className="text-primary-foreground/90 text-lg mb-8 max-w-lg">
+  const { toast } = useToast();
+  const form = useForm<FormData>({
+    defaultValues: {
+      name: "",
+      email: "",
+      company: "",
+      message: "",
+    },
+  });
+
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+    toast({
+      title: "Demande envoyée",
+      description: "Nous vous contacterons bientôt pour organiser une démo personnalisée.",
+    });
+    form.reset();
+  };
+
+  return (
+    <section id="contact" className="w-full bg-primary">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+              Prêt à transformer votre force de vente?
+            </h2>
+            <p className="text-lg text-primary-foreground/90 max-w-3xl mx-auto">
               Contactez-nous dès aujourd'hui pour discuter de vos besoins spécifiques et découvrir comment nous pouvons vous aider à atteindre vos objectifs commerciaux.
             </p>
-            
-            <div className="space-y-6 max-w-md">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Input type="text" placeholder="Votre nom" className="bg-primary-foreground/10 border-primary-foreground/20 placeholder:text-primary-foreground/50 text-primary-foreground" />
-                <Input type="email" placeholder="Votre email" className="bg-primary-foreground/10 border-primary-foreground/20 placeholder:text-primary-foreground/50 text-primary-foreground" />
+          </div>
+
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5 max-w-3xl mx-auto">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <div className="flex items-center bg-primary-foreground/10 border border-primary-foreground/20 rounded-md">
+                          <User className="ml-3 h-5 w-5 text-primary-foreground/50" />
+                          <Input
+                            placeholder="Votre nom"
+                            className="border-0 bg-transparent placeholder:text-primary-foreground/50 text-primary-foreground"
+                            {...field}
+                          />
+                        </div>
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
+
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormControl>
+                        <div className="flex items-center bg-primary-foreground/10 border border-primary-foreground/20 rounded-md">
+                          <Mail className="ml-3 h-5 w-5 text-primary-foreground/50" />
+                          <Input
+                            type="email"
+                            placeholder="Votre email"
+                            className="border-0 bg-transparent placeholder:text-primary-foreground/50 text-primary-foreground"
+                            {...field}
+                          />
+                        </div>
+                      </FormControl>
+                    </FormItem>
+                  )}
+                />
               </div>
-              
-              <div>
-                <Input type="text" placeholder="Votre entreprise" className="bg-primary-foreground/10 border-primary-foreground/20 placeholder:text-primary-foreground/50 text-primary-foreground" />
-              </div>
-              
-              <Button className="w-full bg-primary-foreground text-primary hover:bg-primary-foreground/90">
+
+              <FormField
+                control={form.control}
+                name="company"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <div className="flex items-center bg-primary-foreground/10 border border-primary-foreground/20 rounded-md">
+                        <Briefcase className="ml-3 h-5 w-5 text-primary-foreground/50" />
+                        <Input
+                          placeholder="Votre entreprise"
+                          className="border-0 bg-transparent placeholder:text-primary-foreground/50 text-primary-foreground"
+                          {...field}
+                        />
+                      </div>
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                      <div className="flex bg-primary-foreground/10 border border-primary-foreground/20 rounded-md p-3">
+                        <Send className="h-5 w-5 text-primary-foreground/50 mr-2 mt-1" />
+                        <Textarea
+                          placeholder="Votre message (optionnel)"
+                          className="border-0 bg-transparent resize-none placeholder:text-primary-foreground/50 text-primary-foreground"
+                          {...field}
+                        />
+                      </div>
+                    </FormControl>
+                  </FormItem>
+                )}
+              />
+
+              <Button 
+                type="submit"
+                className="w-full py-6 bg-primary-foreground text-primary hover:bg-primary-foreground/90 flex items-center justify-center"
+              >
                 Demander une démo
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              
-              <p className="text-xs text-primary-foreground/70 text-center">
+
+              <p className="text-xs text-primary-foreground/70 text-center pt-2">
                 En soumettant ce formulaire, vous acceptez nos conditions d'utilisation et notre politique de confidentialité.
               </p>
-            </div>
-          </div>
-          
-          <div className="lg:order-first animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
-            
-          </div>
+            </form>
+          </Form>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default CallToAction;
