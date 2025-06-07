@@ -3,10 +3,14 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Pricing = () => {
+  const navigate = useNavigate();
+  
   const pricingTiers = [
     {
+      id: 'debutant',
       name: "Débutant",
       price: "199€",
       description: "Idéal pour les petites entreprises qui démarrent",
@@ -19,6 +23,7 @@ const Pricing = () => {
       ]
     },
     {
+      id: 'business',
       name: "Business",
       price: "499€",
       description: "Pour les entreprises en pleine croissance",
@@ -33,6 +38,7 @@ const Pricing = () => {
       popular: true
     },
     {
+      id: 'sur-mesure',
       name: "Sur Mesure",
       description: "Solution personnalisée pour les grands comptes",
       features: [
@@ -47,6 +53,16 @@ const Pricing = () => {
       custom: true
     }
   ];
+
+  const handleSelectPlan = (tier: any) => {
+    if (tier.custom) {
+      // Pour le plan sur mesure, rediriger vers un formulaire de contact
+      navigate('/contact');
+    } else {
+      // Pour les autres plans, aller au panier
+      navigate('/checkout', { state: { selectedPlan: tier } });
+    }
+  };
 
   return (
     <section id="pricing" className="section-padding">
@@ -112,6 +128,7 @@ const Pricing = () => {
                 <Button 
                   className="w-full bg-black hover:bg-black/90 text-white"
                   variant="outline"
+                  onClick={() => handleSelectPlan(tier)}
                 >
                   {tier.custom ? "Discuter avec notre agent" : "Commencer"}
                 </Button>
